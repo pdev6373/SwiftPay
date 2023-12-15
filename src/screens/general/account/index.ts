@@ -1,0 +1,13 @@
+export {default as PersonalInfo} from './PersonalInfo';
+export {default as PaymentMethods} from './PaymentMethods';
+export {default as AboutSwiftPay} from './AboutSwiftPay';
+export {default as Account} from './Account';
+export {default as AddNewPaymentMethod} from './AddNewPaymentMethod';
+export {default as HelpCenter} from './HelpCenter';
+export {default as Language} from './Language';
+export {default as Logout} from './Logout';
+export {default as Notification} from './Notification';
+export {default as PrivacyPolicy} from './PrivacyPolicy';
+export {default as Security} from './Security';
+export {default as FAQ} from './FAQ';
+export {default as ContactSupport} from './ContactSupport';
