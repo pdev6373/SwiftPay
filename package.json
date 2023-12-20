@@ -8,7 +8,7 @@
     "lint": "eslint .",
     "start": "react-native start",
     "test": "jest",
-    "create-splash": "react-native generate-bootsplash ./assets/logo.svg --background=181A20 --logo-width=160"
+    "create-splash": "react-native generate-bootsplash ./assets/images/logo.svg --background=181A20 --logo-width=160"
   },
   "dependencies": {
     "@react-navigation/bottom-tabs": "^6.5.11",

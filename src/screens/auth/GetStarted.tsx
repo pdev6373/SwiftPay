@@ -1,7 +1,7 @@
 import {StyleSheet, View} from 'react-native';
 import {Bottom, Button, Text} from '../../components';
 import {ButtonStylesType, TextType} from '../../../types';
-import Logo from '../../../assets/logo.svg';
+import Logo from '../../../assets//images/logo.svg';
 import {sizeResponsive} from '../../utils';
 
 type ButtonType = {

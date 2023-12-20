@@ -3,3 +3,7 @@ export {default as Button} from './Button';
 export {default as Bottom} from './Bottom';
 export {default as Input} from './Input';
 export {default as PageHeader} from './PageHeader';
+export {default as Timeline} from './Timeline';
+export {default as Switch} from './Switch';
+export {default as Transactions} from './Transactions';
+export {default as Chip} from './Chip';
