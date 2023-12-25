@@ -1,6 +1,6 @@
 import {Pressable, ScrollView, StyleSheet, View} from 'react-native';
-import {TransactionsType} from '../../../../types';
 import {Chip, PageHeader} from '../../../components';
+import {TransactionsType} from '../../../../types';
 import {Transactions as AllTransactions} from '../../../components';
 import Search from '../../../../assets/images/search.svg';
 import {sizeResponsive} from '../../../utils';
