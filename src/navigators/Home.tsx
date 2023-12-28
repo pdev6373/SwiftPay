@@ -8,8 +8,8 @@ import InsightsIcon from '../../assets/images/insights.svg';
 import AccountIcon from '../../assets/images/account.svg';
 import {View, StyleSheet} from 'react-native';
 import {Contacts} from '../screens/general/contacts';
-import {Insights} from '../screens/general/insights';
 import {Account} from '../screens/general/account';
+import {Insights} from '../screens/general/insights';
 
 const Tab = createBottomTabNavigator();
 
