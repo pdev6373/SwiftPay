@@ -1,6 +1,6 @@
 import {Text as TextComponent} from 'react-native';
-import {TextType} from '../../types';
 import {sizeResponsive} from '../utils';
+import {TextType} from '../../types';
 
 export default function Text({
   children,
