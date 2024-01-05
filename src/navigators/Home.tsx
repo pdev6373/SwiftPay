@@ -6,8 +6,8 @@ import ContactsIcon from '../../assets/images/contacts.svg';
 import ScanIcon from '../../assets/images/scan.svg';
 import InsightsIcon from '../../assets/images/insights.svg';
 import AccountIcon from '../../assets/images/account.svg';
-import {View, StyleSheet} from 'react-native';
 import {Contacts} from '../screens/general/contacts';
+import {View, StyleSheet} from 'react-native';
 import {Account} from '../screens/general/account';
 import {Insights} from '../screens/general/insights';
 
