@@ -2,8 +2,8 @@ import {createMaterialTopTabNavigator} from '@react-navigation/material-top-tabs
 import {GetStarted, Login} from '../screens/auth';
 import {ContactSupport, FAQ} from '../screens/general/account';
 import {StyleSheet, View} from 'react-native';
-import {sizeResponsive} from '../utils';
 import {PageHeader} from '../components';
+import {sizeResponsive} from '../utils';
 
 const Tab = createMaterialTopTabNavigator();
 
