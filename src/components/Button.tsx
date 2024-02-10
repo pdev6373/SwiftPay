@@ -7,15 +7,18 @@ type Button = {
   children: string;
   buttonStyles: ButtonStylesType;
   textStyles: TextType;
+  onPress: () => any;
 };
 
 export default function Button({
   children,
   buttonStyles: {background, borderColor},
   textStyles: {size, weight, color},
+  onPress,
 }: Button) {
   return (
     <Pressable
+      onPress={onPress}
       style={{
         ...styles.wrapper,
         backgroundColor: background,
