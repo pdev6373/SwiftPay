@@ -62,7 +62,7 @@ export default function Onboarding() {
   const slidesRef = useRef(null);
   const scrollX = useRef(new Animated.Value(0)).current;
   const [currentIndex, setCurrentIndex] = useState(0);
-  const navigation = useNavigation<any>();
+  //   const navigation = useNavigation<any>();
 
   const viewableItemsChanged = useRef(({viewableItems}: any) => {
     setCurrentIndex(viewableItems[0].index);
