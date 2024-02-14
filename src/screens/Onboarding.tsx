@@ -6,8 +6,8 @@ import {
   View,
   useWindowDimensions,
 } from 'react-native';
-import {useTheme} from '../hooks';
 import {Data} from '../constants';
+import {useTheme} from '../hooks';
 import {useRef, useState} from 'react';
 import {Bottom, Button, Text} from '../components';
 import {ButtonStylesType, TextType} from '../../types';
