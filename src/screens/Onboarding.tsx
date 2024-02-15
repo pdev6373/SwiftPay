@@ -11,7 +11,7 @@ import {useTheme} from '../hooks';
 import {useRef, useState} from 'react';
 import {Bottom, Button, Text} from '../components';
 import {ButtonStylesType, TextType} from '../../types';
-import {useNavigation} from '@react-navigation/native';
+// import {useNavigation} from '@react-navigation/native';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
 type OnboardingStylesType = {
