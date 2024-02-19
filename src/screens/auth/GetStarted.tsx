@@ -3,6 +3,8 @@ import {Bottom, Button, Text} from '../../components';
 import {ButtonStylesType, TextType} from '../../../types';
 import Logo from '../../../assets//images/logo.svg';
 import {sizeResponsive} from '../../utils';
+import {useAuth} from '../../hooks';
+import {useNavigation} from '@react-navigation/native';
 
 type ButtonType = {
   children: 'Sign up' | 'Sign in';
@@ -41,6 +43,11 @@ const actions: ButtonType[] = [
 ];
 
 export default function GetStarted() {
+  const navigation = useNavigation();
+
+  const authNavHandler = (type: 'signin' | 'signup') =>
+    navigation.navigate('Sign In');
+
   return (
     <View style={styles.wrapper}>
       <View style={styles.main}>
@@ -61,8 +68,14 @@ export default function GetStarted() {
         <>
           {actions.map(action => (
             <Button
+              key={action.children}
               buttonStyles={action.buttonStyles}
-              textStyles={action.textStyles}>
+              textStyles={action.textStyles}
+              onPress={() =>
+                authNavHandler(
+                  action.children === 'Sign in' ? 'signin' : 'signup',
+                )
+              }>
               {action.children}
             </Button>
           ))}

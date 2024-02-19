@@ -6,13 +6,13 @@ import {
   View,
   useWindowDimensions,
 } from 'react-native';
-import {Data} from '../constants';
-import {useTheme} from '../hooks';
+import {Data} from '../../constants';
+import {useTheme} from '../../hooks';
 import {useRef, useState} from 'react';
-import {Bottom, Button, Text} from '../components';
-import {ButtonStylesType, TextType} from '../../types';
-// import {useNavigation} from '@react-navigation/native';
+import {Bottom, Button, Text} from '../../components';
+import {ButtonStylesType, TextType} from '../../../types';
 import AsyncStorage from '@react-native-async-storage/async-storage';
+import {useNavigation} from '@react-navigation/native';
 
 type OnboardingStylesType = {
   activeColor: string;
@@ -62,6 +62,7 @@ export default function Onboarding() {
   const slidesRef = useRef(null);
   const scrollX = useRef(new Animated.Value(0)).current;
   const [currentIndex, setCurrentIndex] = useState(0);
+  const navigation = useNavigation();
   //   const navigation = useNavigation<any>();
 
   const viewableItemsChanged = useRef(({viewableItems}: any) => {
@@ -76,13 +77,14 @@ export default function Onboarding() {
     width,
   });
 
-  const getStartedHandler = async () =>
+  const getStartedHandler = async () => {
     await AsyncStorage.setItem('isNew', 'false');
+    navigation.navigate('Get Started');
+  };
 
   return (
     <View style={Styles.wrapper}>
       <View style={Styles.innerWrapper}>
-        w
         <FlatList
           ref={slidesRef}
           horizontal
@@ -129,6 +131,7 @@ export default function Onboarding() {
             </View>
           )}
         />
+
         <Bottom>
           <>
             {currentIndex === Data.onboarding.length - 1 ? (
@@ -149,6 +152,7 @@ export default function Onboarding() {
             ) : (
               actions.map(action => (
                 <Button
+                  key={action.children}
                   buttonStyles={action.buttonStyles}
                   textStyles={action.textStyles}
                   onPress={() => {}}>

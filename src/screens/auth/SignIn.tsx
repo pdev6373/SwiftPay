@@ -3,8 +3,11 @@ import {Bottom, Button, Input, PageHeader, Text} from '../../components';
 import Back from '../../../assets/images/back.svg';
 import Unchecked from '../../../assets/images/unchecked.svg';
 import {sizeResponsive} from '../../utils';
+import {useAuth} from '../../hooks';
 
-export default function Login() {
+export default function SignIn() {
+  const {signin} = useAuth();
+
   return (
     <View style={styles.wrapper}>
       <PageHeader />
@@ -71,7 +74,8 @@ export default function Login() {
             weight: '700',
             color: '#212121',
             center: true,
-          }}>
+          }}
+          onPress={signin}>
           Sign in
         </Button>
       </Bottom>

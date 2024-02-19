@@ -73,3 +73,5 @@ export type NotificationsType = {
   date: string;
   notifications: NotificationType[];
 };
+
+export type BooleanType<type> = 'true' | 'false' | type;
