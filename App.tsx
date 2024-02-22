@@ -4,7 +4,7 @@ import {StatusBar, useColorScheme} from 'react-native';
 import {DefaultTheme, NavigationContainer} from '@react-navigation/native';
 import BootSplash from 'react-native-bootsplash';
 import {SafeAreaProvider} from 'react-native-safe-area-context';
-import {Auth, Main} from './src/navigators';
+import {Auth, Home, Main} from './src/navigators';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import {BooleanType} from './types';
 import {useAuth} from './src/hooks';
