@@ -5,9 +5,9 @@ import {DefaultTheme, NavigationContainer} from '@react-navigation/native';
 import BootSplash from 'react-native-bootsplash';
 import {SafeAreaProvider} from 'react-native-safe-area-context';
 import {Auth, Home, Main} from './src/navigators';
-import AsyncStorage from '@react-native-async-storage/async-storage';
 import {BooleanType} from './types';
 import {useAuth} from './src/hooks';
+import AsyncStorage from '@react-native-async-storage/async-storage';
 
 const navTheme = DefaultTheme;
 
