@@ -2,10 +2,10 @@ import 'react-native-gesture-handler';
 import {useEffect, useState} from 'react';
 import {StatusBar, useColorScheme} from 'react-native';
 import {DefaultTheme, NavigationContainer} from '@react-navigation/native';
-import BootSplash from 'react-native-bootsplash';
 import {SafeAreaProvider} from 'react-native-safe-area-context';
 import {Auth, Home, Main} from './src/navigators';
 import {BooleanType} from './types';
+import BootSplash from 'react-native-bootsplash';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import {useAuth} from './src/hooks';
 
