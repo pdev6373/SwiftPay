@@ -9,8 +9,8 @@ import {
 import {Data} from '../../constants';
 import {useTheme} from '../../hooks';
 import {useRef, useState} from 'react';
-import {useNavigation} from '@react-navigation/native';
 import {Bottom, Button, Text} from '../../components';
+import {useNavigation} from '@react-navigation/native';
 import {ButtonStylesType, TextType} from '../../../types';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
