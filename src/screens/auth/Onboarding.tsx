@@ -11,8 +11,8 @@ import {useTheme} from '../../hooks';
 import {useRef, useState} from 'react';
 import {Bottom, Button, Text} from '../../components';
 import {useNavigation} from '@react-navigation/native';
-import {ButtonStylesType, TextType} from '../../../types';
 import AsyncStorage from '@react-native-async-storage/async-storage';
+import {ButtonStylesType, TextType} from '../../../types';
 
 type OnboardingStylesType = {
   activeColor: string;
